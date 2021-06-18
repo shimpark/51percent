@@ -1,0 +1,143 @@
+﻿<!Doctype html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+        <title>51퍼센트</title>
+
+        <meta name="title" content="51퍼센트">
+        <meta name="description" content="Feasible & Creative BTL 전문 대행사">
+        <meta name="keywords" content="마케팅, BTL, 프로모션, 전시, 이벤트, 홍보, 바이럴, 온라인 마케팅, 오프라인 마케팅, 통합마케팅, 브랜딩, 브랜드 마케팅, 디지털마케팅, 스포츠마케팅, 에이전시, 대행사, 마케팅 솔루션">
+        <meta name="author" content="univJOYSEUL">
+
+        <meta property="og:title" content="51퍼센트">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="../content/images/share.png">
+        <meta property="og:description" content="Feasible & Creative BTL 전문 대행사">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="51퍼센트">
+        <meta name="twitter:url" content="">
+        <meta name="twitter:image" content="../content/images/share.png">
+        <meta name="twitter:description" content="Feasible & Creative BTL 전문 대행사">
+
+        <link rel="icon" href="../content/images/favicon_32.png" type="image/png">
+        <link rel="icon" href="../content/images/favicon_64.png" type="image/png">
+        <link rel="icon" href="../content/images/favicon_144.png" type="image/png">
+        <link rel="shortcut icon" href="../content/images/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="../content/styles/font.css?v=@DateTime.Now">
+        <link rel="stylesheet" href="../content/styles/reset.css?v=@DateTime.Now">
+        <link rel="stylesheet" href="../content/styles/style.css?v=@DateTime.Now">
+
+        <script src="../content/scripts/jquery-1.12.4.min.js"></script>
+        <script src="../content/scripts/html5shiv.js"></script>
+        <script src="../content/scripts/event.js"></script>
+    </head>
+
+    <body>
+
+        <!-- header START -->
+        <header class="bgDarkGrey">
+            <div class="grid">
+                <h1>
+                    <a href="../Index/" title="메인 페이지로 이동"><img src="../content/images/ci.png" alt="51%" class="ci"></a>
+                </h1> <!-- //ci -->
+                <div class="menuBtn open"></div>
+                <nav class="bgDarkGrey">
+                    <div class="menuBtn close"></div>
+                    <a href="../About/index.html" title="ABOUT 페이지로 이동" class="menu gothamBook fntWhite">ABOUT</a>
+                    <a href="../ProjectDigital/index.html" title="PROJECT 페이지로 이동" class="menu gothamBook fntWhite">PROJECT</a>
+                    <a href="../Recruit/index.html" title="RECRUIT 페이지로 이동" class="menu gothamBook fntWhite">RECRUIT</a>
+                    <a href="../Contact/index.html" title="CONTACT US 페이지로 이동" class="menu gothamBook fntWhite">CONTACT US</a>
+                </nav> <!-- //gnb -->
+            </div>
+        </header>
+        <!-- //header END -->
+
+        <!-- Recruit START -->
+        <section class="recruitSt">
+            <h3 class="headTit gothamB">RECRUIT</h3>
+            <article>
+                <div class="grid">
+                    <div class="bnr">
+                        <h4 class="gothamL"><span class="bar bgYellow"></span><span class="txt">Marketing Solution</span></h4>
+                        <p>전문인력을 모십니다.</p>
+                    </div> <!-- //bnr -->
+                    <div class="txtBox">
+                        <p>51%는 실현 가능한 크리에이티브에 함께할 신입사원 및 경력사원을 기다립니다.<br>채용 관련 문의 및 상시채용 접수는 문의처(<a href="mailto:contact@51percent.kr">contact@51percent.kr</a>) 를 통해 가능합니다.<br>상시채용 지원 시 제출된 지원서는 검토 후 소중히 보관하여, 인원충원 수요 발생 시 연락 드리겠습니다.</p>
+                    </div> <!-- //txtBox -->
+                    <div class="btnBox">
+                        <a href="http://corp.univ.me/Recruit" target="_blank" title="공개채용 확인페이지로 이동" class="btn">
+                            <span class="hover">
+                                <span class="txt">공개채용 확인</span>
+                            </span>
+                        </a>
+                    </div> <!-- //btnBox-->
+                </div> <!-- //grid -->
+            </article>
+        </section>
+        <!-- //Recruit End -->
+
+        <!-- footer START -->
+        <footer>
+            <div class="grid">
+                <div class="bizInfo gothamBook">
+                    <p>T. <a href="tel:02-6959-1736">02-6959-1736</a></p>
+                    <p>M. <a href="mailto:contact@51percent.kr">contact@51percent.kr</a></p>
+                    <p>F. 0505-115-4141</p>
+                    <p>A. 04156 <span class="nanum">서울특별시 마포구 독막로 331 (도화동, 마스터즈타워빌딩) 3층</span></p>
+                </div>
+                <div class="copy gothamBook"><p>COPYRIGHT&copy; 51PERCENT. ALL RIGHTS RESERVED.</p></div>
+            </div>
+        </footer>
+        <!-- //footer END -->
+
+        <script src="../content/scripts/TweenMax.min.js"></script>
+        <script>
+            // tweenmax
+            wWidth = $(window).innerWidth();
+            if(wWidth < 768) {
+                TweenMax.to(".recruitSt .bnr .bar", 0.8, {
+                    width: "92%",
+                    ease: Power4.easeOut
+                }).delay(0.2);
+            } else {
+                TweenMax.to(".recruitSt .bnr .bar", 0.8, {
+                    width: "100%",
+                    ease: Power4.easeOut
+                }).delay(0.2);
+            }
+            $(window).resize(function(){
+                wWidth = $(window).innerWidth();
+                if(wWidth < 768) {
+                    TweenMax.to(".recruitSt .bnr .bar", 0.8, {
+                        width: "92%",
+                        ease: Power4.easeOut
+                    }).delay(0.2);
+                } else {
+                    TweenMax.to(".recruitSt .bnr .bar", 0.8, {
+                        width: "100%",
+                        ease: Power4.easeOut
+                    }).delay(0.2);
+                }
+            });
+            $(window).trigger("resize");
+        </script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127584518-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-127584518-1');
+        </script>
+
+    </body>
+
+</html>
