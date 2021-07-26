@@ -313,6 +313,37 @@ footer p + p {
 	footer p + p { margin-left: 0.4rem; }
 }
 
+/* 0726 zoe 추가 시작 */
+.foot-link-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0.75rem;
+}
+.foot-link-list li {
+    position: relative;
+    margin: 0;
+}
+.foot-link-list li + li {
+    padding-left: 1.75rem;
+}
+.foot-link-list a {
+    display: block;
+    font-size: 0.6rem;
+    color: #666;
+}
+.foot-link-list .mark {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0.75rem;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 3px;
+    height: 3px;
+    background-color: #d6d6d6;
+}
+/* 0726 zoe 추가 끝 */
+
 footer .bizInfo,
 footer .copy {
     display: inline-block;
@@ -427,6 +458,10 @@ main .grid {
 
 main footer {
     border-top: 0;
+}
+
+main .foot-link-list a { /* 0726 zoe 추가 */
+    font-size: 0.7rem;
 }
 
 main footer .bizInfo {
@@ -1361,6 +1396,9 @@ MEDIA QUERY
     }
 
     /* footer */
+    .foot-link-list { /* 0726 zoe 추가 */
+        justify-content: center;
+    }
     footer .bizInfo,
     footer .copy {
         display: block;
@@ -1598,6 +1636,26 @@ MEDIA QUERY
     }
 
     /* footer */
+
+    /* 0726 zoe 추가 시작 */
+    .foot-link-list li {
+        width: 33.33%;
+    }
+    .foot-link-list li:nth-last-child(-n+3) {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #666;
+    }
+    .foot-link-list li + li {
+        padding-left: 0;
+    }
+    .foot-link-list .mark {
+        display: none;
+    }
+    .foot-link-list a {
+        padding: 5px 0;
+        text-align: center;
+    }
+    /* 0726 zoe 추가 끝 */
     footer p + p {
         margin-left: 1rem;
     }
